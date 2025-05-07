@@ -1,12 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>"WDD 131 - Dynamic Web Fundamentals - Godfrey Hogan Eyo"</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Home Page">
+    <meta name="author" content="Godfrey Hogan Eyo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script defer src="script/getdates.js"></script>
+
 </head>
 <body>
-    <h1>Hello World
-    </h1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals -<span id="name">&nbsp; Godfrey Hogan Eyo</span></h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/godfrey-eyo-66aa3a251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/.">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="card">
+            <h3>About me</h3>
+            <div class="about-me-info">
+                <p>Hello! My name is Godfrey Hogan Eyo and I am from Nigeria. I love Eating, watching movies, playing games. My favorite sport is table tennis. I major in Software Development and I hope to one day be a Fullstack Developer. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolor autus mollitia ut atque neque iste vel doloremque!</p>
+                <img src="images/profile.jpg" alt="Godfrey Profile image" width="200">
+            </div>
+            <div >
+                <h4>Abuja, Nigeria</h4>
+                <div class="country-info">
+                    <div>
+                        <img src="images/nigeriaFlag.png" alt="Nigeria flag" width="200" >
+                        <p class="caption">Official Flag of Nigeria</p>
+                    </div>
+                    
+                    <p>Abuja is the capital city of Nigeria, located in the center of the country. It was officially made the capital in 1991, replacing Lagos, to promote national unity and better urban planning. Known for its modern infrastructure, wide roads, and well-organized layout, Abuja is home to important landmarks like the Aso Rock, the Nigerian National Mosque, and the National Assembly Complex.Abuja's serene environment, green landscapes, and growing economy make it one of Africa’s most planned and livable cities.</p>
+                </div>
+                    
+            </div>
+        </section>
+        <section class="card resources">
+            <h3>Web Dev Resources</h3>
+            <ul>
+                <li><a href="#">Dev.to Community</a></li>
+                <li><a href="#">Smashing Magazine</a></li>
+                <li><a href="#">CSS Tricks</a></li>
+                <li><a href="#">W3 Schools</a></li>
+                <li><a href="#">Udemy</a></li>
+                <li><a href="#">Image Placeholder</a></li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> ✌ Godfrey Hogan Eyo ✌ Abuja, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
-</html>
