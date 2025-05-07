@@ -45,7 +45,8 @@ nav a:hover {
 }
 
 main {
-    margin: 1.5rem;
+    max-width: 1200px;
+    margin: 1.5rem auto;
 }
 
 .about-me-info, .country-info {
