@@ -54,7 +54,7 @@ main {
     gap: 1rem;
 }
 
-h4 {
+h3 {
     text-align: center;
     border-bottom: 1px solid;
     padding: .8rem;
@@ -69,7 +69,7 @@ h4 {
 }
 
 
-.card h3 {
+.card h2 {
     text-align: center;
     background-color: #1d4d73;
     padding: .8rem;
