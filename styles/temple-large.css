@@ -1,0 +1,36 @@
+@media (min-width: 37.5em) {
+	header p {
+		font-size: 1.6rem;
+		margin-left: 0;
+	
+	}
+
+	/* h2 {
+		font-size: 2rem;
+		text-align: center;
+	} */
+
+	#menu {
+		display: none; /* hide hamburger button */
+        
+	}
+
+	.navigation {
+		flex-direction: row;
+        position: absolute;
+        top: .4rem;
+        right: .8rem;
+        ;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+        font-size: 1.2rem;
+        
+	}
+
+    
+    
+}
+  
