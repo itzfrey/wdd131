@@ -8,20 +8,12 @@ body {
     font-family: "Poetsen One", sans-serif;
 }
 
-header p {
+h1 {
 	text-align: left;
 	font-size: 1.6rem;
     background-color: #ace;
     padding: 1rem;
 }
-
-/* h2 {
-	font-size: 1.2rem;
-	color: navy;
-	text-align: left;
-	margin: 1rem;
-} */
-
 
 
 /* small view navigation */
@@ -70,8 +62,8 @@ header p {
 	display: block;
 }
 
-h1 {
-    font-size: 2rem;
+h2 {
+    font-size: 1.6rem;
     text-align: center;
     margin-bottom: .8rem;
 }
