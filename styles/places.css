@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-
 :root {
-    --font-family: "Lato";
     --primary-color: #d11134;
     --background-color: #f0fff0;
     --text-color: #333;
@@ -16,7 +13,7 @@
 
 body {
     margin: 0 10px;
-    font-family: var(--font-family);
+    font-family: 'Lato', sans-serif;  
     background-color: var(--background-color);
     color: var(--text-color);
     margin: 0 10px;
@@ -67,6 +64,8 @@ h1 {
     padding: 30px;
     font-size: 2rem;
 }
+
+
 
 .data-info, .weather-info {
     display: grid;

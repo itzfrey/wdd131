@@ -6,6 +6,9 @@
     <title>WDD 131 | Country Page</title>
     <meta name="description" content="Godfrey Hogan Eyo | WDD 131 | Country Page">
     <meta name="author" content="Godfrey Hogan Eyo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/places.css">
     <link rel="stylesheet" href="styles/places-large.css">
     <script src="scripts/places.js" defer ></script>
@@ -14,8 +17,14 @@
     <header>
         <h1>Japan</h1>
     </header>
-    <section class="container">
-        <img id="country-image" src="images/japan-image2.webp" alt="Scenic view of Japan">
+    <main>
+        <section class="container">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/japan-image-large.webp">
+                <source media="(min-width: 550px)" srcset="images/japan-image-medium.webp">
+                <img src="images/japan-image-medium.webp" alt="japan image" loading="lazy" width="400" height="300" id="country-image">
+            </picture>
+        
         <div class="info-container">
             <div class="data">
                 <h2>Data</h2>
@@ -33,7 +42,7 @@
     
             <div class="weather">
                 <div id="weather-header">
-                    <h2>Weather</h2>
+                    <h2 class="with-icon">Weather</h2>
                     <img src="images/weather-icon.svg" alt="weather icon" width="150">
                 </div>
                 
@@ -46,6 +55,7 @@
             </div>
         </div>
     </section>
+    </main>
     <footer>
         <p>&copy;<span id="currentyear"></span> 😘 Godfrey Hogan Eyo 😘 Abuja, Nigeria</p>
         <p id="lastModified"></p>
