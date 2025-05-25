@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+    --font-family: "Lato";
+    --primary-color: #d11134;
+    --background-color: #f0fff0;
+    --text-color: #333;
+    --white: #fff;  
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    margin: 0 10px;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0 10px;
+}
+
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.container {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#country-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top:  15px;
+    margin-bottom: 15px;
+}
+.info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.data, .weather {
+    text-align: center;
+    background-color: var(--white);
+    padding-bottom: 20px;
+}
+
+.data {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+
+.data h2, 
+.weather h2 {
+    padding: 30px;
+    font-size: 2rem;
+}
+
+.data-info, .weather-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;    
+    
+}
+
+.data-info p,
+.weather-info p {
+    font-size: 1.5rem;
+    line-height: 2;
+    display: contents;
+}
+
+.data-info strong, .weather-info strong {
+    text-align: end;
+    white-space: nowrap;
+}
+
+.data-info span, .weather-info span {
+    text-align: start;
+    padding-left: 10px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 30px;
+
+    text-align: center;
+}
+
+footer p {
+    line-height: 1.5;
+    font-size: 1.5rem;
+    color: var(--white);
+}
