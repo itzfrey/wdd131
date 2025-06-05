@@ -15,7 +15,7 @@
         position: absolute;
         top: .4rem;
         right: .8rem;
-        ;
+        
 	}
 
 	.navigation a {
@@ -25,6 +25,13 @@
         
 	}
 
+	.container section {
+		width: 100%;
+	}
+
+	h2 {
+		font-size: 30px;
+	}
     
     
 }
