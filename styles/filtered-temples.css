@@ -86,12 +86,14 @@ h3 {
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 25px;
     place-items: center;
+	/* width: 250px; */
 }
 
 .container section {
 	border: 1px solid #ccc;
 	background-color: #ededed;
 	text-align: center;
+	
 }
 
 img { 

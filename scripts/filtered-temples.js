@@ -7,6 +7,14 @@ hamButton.addEventListener("click", () => {
 	hamButton.classList.toggle("open");
 });
 
+document.querySelectorAll(".navigation a").forEach(link => {
+  link.addEventListener("click", () => {
+    navigation.classList.remove("open");
+    hamButton.classList.remove("open");
+  });
+});
+
+
 // footer year and last modified date
 const year = document.querySelector("#currentyear");
 const date = new Date();
