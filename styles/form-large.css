@@ -1,0 +1,10 @@
+@media (min-width: 37.5em) {
+    .rating-group input[type="radio"] {
+    width: 1.3rem;
+    height: 1.3rem;
+    }
+    .review-form input[type="checkbox"] {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+}
