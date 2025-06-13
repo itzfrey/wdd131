@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | Product Review Form Page</title>
+    <meta name="description" content="This is a product Review Form page">
+    <meta name="author" content="Godfrey Hogan Eyo">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>
+            Product Review
+        </h1>
+    </header>
+    <main>
+        <form action="review.html" method="get" class="review-form">
+            <label class="product-name">Product Name*</label>
+
+            <select class="custom-select" name="product" required>
+                
+            
+            </select>
+            
+            <div>Overall Rating</div>
+            <div class="rating-group">
+                
+                <label class="radio-label"><div>&#9733;</div><input type="radio" name="rating" value="oneStar"></label>
+                <label class="radio-label"><div>&#9733;&#9733;</div><input type="radio" name="rating" value="twoStar"></label>
+                <label class="radio-label"><div>&#9733;&#9733;&#9733;</div><input type="radio" name="rating" value="threeStar"></label>
+                <label class="radio-label"><div>&#9733;&#9733;&#9733;&#9733;</div><input type="radio" name="rating" value="fourStar"></label>
+                <label class="radio-label"><div>&#9733;&#9733;&#9733;&#9733;&#9733;</div><input type="radio" name="rating" value="fiveStar"></label>
+            </div>
+            
+
+            <label>Date of Installation<input type="date" name="installationDate" required></label>
+
+            <div>Which features did you find useful in the product? <br><span class="check">(Check all that apply)</span></div>
+            
+            <label><input type="checkbox" name="durability" value="yes">Durability</label>
+            <label><input type="checkbox" name="ease" value="yes">Ease of Use</label>
+            <label><input type="checkbox" name="performance" value="yes">Performance</label>
+            <label><input type="checkbox" name="design" value="yes">Design</label>
+
+            <!-- <label class="written-review">Written Review <span id="optional">(Optional)</span><input type="text" name="writtenReview"></label> -->
+            <label>Written Review <textarea name="writtenReview" id="writtenReview" rows="4"></textarea></label>
+
+            <label>Your Name <span id="optional">(Optional)</span><input type="text" name="name"></label>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 😘 Godfrey Hogan Eyo 😘 Abuja, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer> 
+</body>
+</html>

@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {   
+    font-family: Verdana, sans-serif; 
+}
+
+h1 {
+    background-color: #2e032c;
+    color: #fff;
+    padding: 1.8rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ----------- FORM STYLING -------------- */
+
+.review-form {
+    background-color: #d6ced6;
+    width: 100%;
+    max-width: 500px;
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin: 1rem auto;
+}
+
+.review-form label{
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.review-form input[type="text"],
+.review-form input[type="date"],
+.review-form select
+{
+    display: block;
+    border: solid 1px #999;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+    appearance: none; /*to over ride the default browser styling */
+}
+
+.review-form select,
+.review-form input[type="radio"],
+.review-form input[type="text"],
+.review-form input[type="date"] {
+    margin-bottom: 1rem;
+    margin-top: .4rem;
+}
+
+
+.review-form input[type="radio"],
+.review-form input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+#optional {
+    color: #162f81;
+}
+
+.rating-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center; 
+}
+
+.rating-group label {
+    display: flex;
+    flex-direction: column; /* Stack radio on top of stars */
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.rating-group input[type="radio"] {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-left: 5px;
+}
+
+.check {
+    font-style: italic;
+}
+
+.review-form input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 4px 10px 5px 0;
+}
+
+.custom-select {
+  appearance: none;
+  background: url('data:image/svg+xml;utf8,<svg fill="black" height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 1rem center;
+  background-color: white;
+  padding-right: 2rem;
+}
+
+.review-form label textarea {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem;
+    margin-top: 0.4rem;
+    font-family: inherit;
+    font-size: 1rem;
+    border: 1px solid #999;
+    resize: vertical;
+}
+
+
+.review-form input[type="submit"]{
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #999;
+    width: 100%;
+    max-width: 400px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: .8rem;
+}
+
+.review-form input[type="submit"]:hover {
+    background-color: #2e032c;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.review-form select:required,
+.review-form input[type="date"]:required{
+    border-bottom: solid 8px red;
+}
+
+.review-form select:required:valid,
+.review-form input[type="date"]:required:valid {
+    border-bottom: solid 8px green;
+}
+
+footer {
+    max-width: 1000PX;
+    margin: 0 auto;
+    background-color:  #2e032c;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 1.59;
+
+}
