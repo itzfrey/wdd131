@@ -1,0 +1,202 @@
+@media (min-width: 40.5em) {
+  #logo-img {
+    min-width: 140px;
+  }
+
+  #menu {
+    display: none;
+    /* hide hamburger button */
+  }
+
+  .navigation {
+    flex-direction: row;
+    position: absolute;
+    top: 2rem;
+    right: 0.8rem;
+    padding-top: 1rem;
+  }
+
+  .navigation a {
+    display: block;
+    flex: 1 1 100%;
+
+    font-size: 1.5rem;
+    max-width: 250px;
+  }
+
+  .logo {
+    display: flex;
+  }
+
+  #logo-img {
+    margin: 1rem;
+  }
+
+  .home-header {
+    font-size: 1.5rem;
+    padding-top: 15px;
+  }
+
+  .home-header h1 {
+    font-size: 2.3rem;
+    margin: 0;
+  }
+
+  .home-header p {
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+  }
+
+  .subscribe-section h2 {
+    font-size: 2.3rem;
+  }
+
+  #subscribe-form input,
+  #subscribe-form button {
+    font-size: 1.3rem;
+  }
+
+  #subscribe-form button {
+    padding: 1.2rem;
+  }
+
+  .trip-text p:last-of-type {
+    font-size: 1.4rem;
+  }
+
+  .trip-text p:first-child {
+    font-size: 2.3rem;
+  }
+
+  .trip-text a {
+    font-size: 1.4rem;
+    width: 30%;
+  }
+
+  .trip-section {
+    margin-bottom: 2.5rem;
+  }
+
+  .offerings h2 {
+    font-size: 2.3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .grid-item p {
+    font-size: 1.2rem;
+  }
+
+  .site-footer {
+    padding: 3rem 5rem;
+    gap: 2rem;
+    font-size: 1.3rem;
+  }
+
+  .site-footer>div {
+    flex: 1 1 500px;
+    min-width: 220px;
+  }
+
+  .footer-logo img {
+    width: 90px;
+  }
+
+  .footer-copy {
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    /* border-top: none; */
+  }
+
+  /* About Page */
+
+  .adventure-figure {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-heading h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-content h2 {
+    font-size: 1.9rem;
+  }
+
+  .about-content p {
+    font-size: 1.5rem;
+  }
+
+  .adventure-section h2 {
+    font-size: 1.9rem;
+  }
+
+  .adventure-figure figcaption {
+    font-size: 1.5rem;
+
+  }
+
+  /* adventure-figure {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .adventure-figure figure {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+} */
+
+
+  /* Contact Page */
+  .contact-h1 {
+    font-size: 2.3rem;
+  }
+
+  .company-info h2 {
+    font-size: 1.6rem;
+  }
+
+  .contact-form h3 {
+    font-size: 1.6rem;
+  }
+
+  .company-info .address p,
+  .company-info .phone p,
+  .company-info .email p {
+    font-size: 1.3rem;
+  }
+
+  .address p:first-child,
+  .phone p:first-child,
+  .email p:first-child {
+    font-size: 1.4rem;
+    padding: .5rem 0;
+  }
+
+  .wf1 label {
+    font-size: 1.4rem;
+  }
+
+  .wf1 input[type="text"],
+  .wf1 input[type="tel"],
+  .wf1 input[type="email"],
+  .wf1 input[type="number"] {
+    height: 60px;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .wf1 input[type="submit"] {
+    padding: 1.5rem;
+    font-size: 1.4rem;
+  }
+
+
+
+}
+
+@media (max-width: 800px) {
+  .navigation a {
+    font-size: 1.2rem;
+  }
+}

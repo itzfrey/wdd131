@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frey Rafting Site</title>
+  <meta name="description" content="Frey Water Rafting Site Home Page">
+  <meta name="author" content="Godfrey Hogan Eyo">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/rafting.css">
+  <link rel="stylesheet" href="styles/rafting-large.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/rafting.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <img id="logo-img" src="images/rafting-logo.webp" alt="Rafting Site Image" loading="lazy">
+    <button id="menu" aria-label="Open menu"></button>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="home-section">
+      <div class="home-header">
+        <h1>Welcome to Frey Water Rafting</h1>
+        <p>Your adventure starts here!</p>
+      </div>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/home-image2.webp" class="d-block w-100" alt="home image 2" loading="lazy">
+          </div>
+          <div class="carousel-item">
+            <img src="images/home-image3.webp" class="d-block w-100" alt="home image 3" loading="lazy">
+          </div>
+          <div class="carousel-item">
+            <img src="images/home-image1.webp" class="d-block w-100" alt="home image 1" loading="lazy">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="subscribe-section">
+      <h2>Dont Miss an Adventure</h2>
+      <form id="subscribe-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+    <div class="trip-section">
+      <div class="trip-image-container">
+        <img src="images/river-exhilaration.jpg" alt="trip section image" loading="lazy">
+      </div>
+      <div class="trip-text">
+        <p>Ready for an Exciting Adventure?</p>
+        <p>
+          Check out our amazing rafting trips and book your adventure now!
+        </p>
+        <a href="trips.html" class="trip-button">View All Adventures</a>
+      </div>
+    </div>
+
+    <section class="offerings">
+      <h2>Our Rafting Site Purpose and Offerings</h2>
+      <div class="grid">
+        <div class="grid-item">
+          <img src="images/thrilling-image.webp" alt="Thrilling Rapids" loading="lazy">
+          <h3>Thrilling Rapids Expendition</h3>
+          <p>
+            Experience the excitement of navigating through challenging rapids
+            with our expert guides.
+          </p>
+        </div>
+        <div class="grid-item">
+          <img src="images/familyfun-image.webp" alt="Family Fun Float" loading="lazy">
+          <h3>Family Fun Float</h3>
+          <p>
+            Enjoy serene and peaceful float trips, taking in the breathtaking
+            natural beauty around you.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-logo">
+      <img src="images/rafting-logo.webp" alt="Frey Rafting Logo">
+    </div>
+
+    <div class="footer-contact">
+      <p>📞 Give Us a Call</p>
+      <a href="tel:+2349079770845">+234-907-977-0845</a>
+    </div>
+
+    <div class="footer-email">
+      <p>✉️ Send Us an Email</p>
+      <a href="mailto:hogan.godfrey1@gmail.com">hogan.godfrey1@gmail.com</a>
+    </div>
+
+    <div class="footer-social">
+      <p>Follow Us</p>
+      <a href="#"><img src="images/facebook_icon.png" alt="Facebook"></a>
+      <a href="#"><img src="images/instagram_icon.png" alt="Instagram"></a>
+      <a href="#"><img src="images/linkedin_icon.png" alt="LinkedIn"></a>
+      <a href="#"><img src="images/twitter_icon.png" alt="Twitter"></a>
+    </div>
+    <div class="footer-copy">
+      <p>
+        &copy;<span id="currentyear"></span> 😘 Godfrey Hogan Eyo 😘 Abuja,
+        Nigeria
+      </p>
+      <p id="lastModified"></p>
+      <p>All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
