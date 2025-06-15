@@ -191,6 +191,15 @@
     font-size: 1.4rem;
   }
 
+  /* Trip Page */
+
+   .trip-item img {
+    height: 300px;
+  }
+
+  /* .trip-table th:first-child,
+  .trip-table td:first-child {
+    min-width: 200px; */
 
 
 }
