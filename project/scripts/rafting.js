@@ -25,11 +25,11 @@ lastModified.innerHTML = "Last Modified: " + document.lastModified
     });
 
 const trips = [
-  { name: "Extreme Trips", duration: "2 days", difficulty: "Challenging", season: "Spring, Summer", price: "$350" },
-  { name: "Family Fun Float", duration: "Half day", difficulty: "Easy", season: "Spring, Summer, Fall", price: "$90" },
-  { name: "Canyon Explorer", duration: "10 hours", difficulty: "Moderate", season: "Summer, Fall", price: "$180" },
-  { name: "River Exhilaration", duration: "6 hours", difficulty: "Extreme", season: "Spring", price: "$220" },
-  { name: "Gentle Float Trips", duration: "1 day", difficulty: "Moderate", season: "Spring, Summer, Fall", price: "$150" }
+  { name: "Extreme Trips", duration: "2 days", difficulty: "Challenging", season: "Spring, Summer", price: "$5,000" },
+  { name: "Family Fun Float", duration: "Half day", difficulty: "Easy", season: "Spring, Summer, Fall", price: "$1,500" },
+  { name: "Canyon Explorer", duration: "10 hours", difficulty: "Moderate", season: "Summer, Fall", price: "$1,500" },
+  { name: "River Exhilaration", duration: "6 hours", difficulty: "Extreme", season: "Spring", price: "$2,000" },
+  { name: "Gentle Float Trips", duration: "1 day", difficulty: "Moderate", season: "Spring, Summer, Fall", price: "$1,500" }
 ];
 
 function buildTripTable() {
