@@ -1,8 +1,6 @@
-@charset "UTF-8";
-
 :root {
-  --Primary-Color: #f7da4a;
-  --Background-Color: #f3e8ee;
+  --Primary-Color: #008080;
+  --Background-Color: #ffd700;
   --Typeface-Color: #335c67;
   --Additional-Color1: #9a8f97;
   --Additional-Color2: #41bbd9;
@@ -26,23 +24,31 @@ p {
   font-family: var(--Body-Font);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--Header-Font);
   color: #000;
 }
 
-a, button {
+
+button {
+  color: #000;
+}
+
+button {
+  background-color: #ffd700;
   color: #000;
 }
 
 main {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
-  background-color: #f5f5f5
+  background-image: url('../images/background-trips.webp');
 }
 
 header {
-  background-color: var(--Primary-Color);
+  background-color: var(--Background-Color);
   position: relative;
   z-index: 999;
 }
@@ -55,7 +61,8 @@ header {
 
 .home-section {
   position: relative;
-  background-color: #fff;
+  /* background-color: #fff; */
+
 }
 
 /* small view navigation */
@@ -81,7 +88,7 @@ header {
   flex-direction: column;
   justify-content: space-around;
   list-style: none;
-  background-color: var(--Primary-Color);
+
 }
 
 .navigation a {
@@ -91,6 +98,8 @@ header {
   text-decoration: none;
   font-size: 1.2rem;
   width: 100%;
+  color: #000;
+  font-weight: bold;
 }
 
 .navigation a:hover {
@@ -127,6 +136,7 @@ ul {
   text-align: center;
   font-family: var(--Header-Font);
   width: 100%;
+
 }
 
 .home-header h1 {
@@ -144,7 +154,7 @@ ul {
 .subscribe-section {
   text-align: center;
   padding: 2rem 1rem;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 .subscribe-section h2 {
@@ -171,8 +181,8 @@ ul {
 }
 
 #subscribe-form button {
-  background-color: var(--Additional-Color2);
-   font-weight: bold;
+  background-color: #ffd700;
+  font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
   border: none;
@@ -180,7 +190,8 @@ ul {
 }
 
 #subscribe-form button:hover {
- background-color: #2fa3c1;}
+  background-color: #2fa3c1;
+}
 
 .trip-section {
   position: relative;
@@ -221,8 +232,8 @@ ul {
 }
 
 .trip-text a {
-  background-color: var(--Additional-Color2);
-   font-weight: bold;
+  background-color: #ffd700;
+  font-weight: bold;
   cursor: pointer;
   border: none;
   padding: 0.8rem 1rem;
@@ -232,49 +243,117 @@ ul {
   display: block;
   width: 50%;
   margin: 0 auto;
+  color: #000;
 }
 
 .trip-text a:hover {
   background-color: #2fa3c1;
 }
 
-.offerings {
-  text-align: center;
-  padding: 1rem 20px;
+
+.row {
+  margin: 2rem 2rem 0 2rem;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.offerings h2 {
+.col-md-7 {
+  margin-top: 1.3rem;
+}
+
+.col-md-7 h2 {
+  font-weight: bold !important;
+  font-size: 1.2rem;
   font-family: var(--Header-Font);
+  font-weight: bold;
   margin-bottom: 1.5rem;
-   font-weight: bold;
+  text-align: center;
+}
+
+.col-md-5 {
+  margin-bottom: 1.3rem;
+}
+
+.offering-h2 {
+  font-size: 1.4rem;
+  font-family: var(--Header-Font);
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.lh-1 {
   font-size: 1.3rem;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;
-  padding-bottom: 2.5rem;
+.lead {
+  font-size: 1rem;
+  color: #000;
 }
 
-.grid-item {
-  border: 1px solid var(--Additional-Color1);
-  border-radius: 5px;
-  padding: 15px;
+.mx-auto {
+  padding-top: 1rem;
+  border-radius: 8px;
+}
+
+.social-proof {
+  background-color: rgba(255, 255, 255, 0.5);
+
+  padding: 2rem 1rem;
+  margin: auto;
   text-align: center;
-  background-color: rgb(235, 234, 234);
-  /* background-color: #000; */
-  /* color: #fff; */
+  margin-top: 1.5rem;
 }
 
-.grid-item img {
-  width: 100%;
-  border-radius: 5px;
+.proof-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
-.grid-item h3 {
-  margin-top: 10px;
-  margin-bottom: 5px;
+.proof-header p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 0.75rem;
+  object-fit: cover;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.name span {
+  display: block;
+  font-weight: normal;
+  color: var(--Typeface-Color);
+  font-size: 0.9rem;
+}
+
+
+blockquote {
+  font-style: italic;
+  color: #000;
 }
 
 /* About Page */
@@ -313,9 +392,10 @@ ul {
 }
 
 .adventure-section {
-  padding: 2rem 1rem 2.5rem 1rem;
-  background-color: #fff;
+  padding: 2rem 1.5rem 2.5rem 1.5rem;
+  /* background-color: #fff; */
   text-align: center;
+
 }
 
 .adventure-section h2 {
@@ -323,6 +403,10 @@ ul {
   margin-bottom: 2rem;
   font-family: var(--Header-Font);
   font-weight: bold;
+}
+
+figure {
+  border-radius: 10px;
 }
 
 .adventure-figure {
@@ -334,7 +418,7 @@ ul {
 .adventure-figure figure {
   margin: 0;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #ebebeb;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 
 }
@@ -362,16 +446,28 @@ ul {
 /* Contact Us Page */
 
 .contact-form {
-  margin-bottom: 1rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 1rem 1rem 1rem 1rem;
+  margin-bottom: 0;
 }
 
 .contact-h1 {
-  margin-bottom: 1.5rem;
-  color: var(--Typeface-Color);
+  padding: 1.5rem;
+  color: #fff;
   text-align: center;
   font-weight: bold;
-  margin-top: 1.5rem;
+
   font-family: var(--Header-Font);
+}
+
+.company-info {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  max-width: 800px;
 }
 
 
@@ -396,20 +492,11 @@ ul {
 
 form {
   max-width: 500px;
-  /* margin: 0 auto; */
-}
-
-.contact-form {
-  margin: 1rem;
 }
 
 .contact-section {
   padding: 2rem 1rem;
-
 }
-
-
-  
 
 .contact-form h3 {
   width: 100%;
@@ -423,7 +510,7 @@ form {
   padding-top: 1rem;
   font-size: 0.9rem;
   font-weight: bold;
-  color: var(--Typeface-Color);
+  color: #000;
 }
 
 .wf1 input[type="text"],
@@ -434,10 +521,11 @@ form {
   display: block;
   border: solid 1px #999;
   padding: 0.75rem;
-  color: #555;
+  color: #000;
   width: 100%;
   max-width: 400px;
-  appearance: none;/*to over ride the default browser styling */
+  appearance: none;
+  /*to over ride the default browser styling */
   border-radius: 6px;
   font-family: inheri;
 }
@@ -479,45 +567,49 @@ form {
   border-bottom: solid 8px green;
 }
 
-/* Trips page */
+
+/* Trip Page */
+
 
 section.call-to-action {
-    padding: 2rem 1rem;
-    text-align: center;
-    background-color: #f5f5f5;
+  padding: 2rem 1rem;
+  text-align: center;
 }
 
 section.call-to-action h1 {
-    margin-bottom: 1rem;
-      font-family: var(--header-font);
-    font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: var(--header-font);
+  font-size: 1.5rem;
 }
 
 section.call-to-action .contact-button {
-    display: inline-block;
-    padding: 1rem 1rem;
-    background-color: var(--Additional-Color2);
-    text-decoration: none;
-    border-radius: 5px;  
-    font-weight: bold;
+  display: inline-block;
+  padding: 1rem 1rem;
+  background-color: var(--Additional-Color2);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: var(--Background-Color);
+  color: #000;
+
 }
 
 section.call-to-action .contact-button:hover {
-    background-color: #3299b3;
+  background-color: #3299b3;
 }
 
 .trip-description {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .trip-item {
   background: #fff;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
   display: flex;
   flex-direction: column;
@@ -525,7 +617,7 @@ section.call-to-action .contact-button:hover {
 
 .trip-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -580,7 +672,7 @@ section.call-to-action .contact-button:hover {
 }
 
 .trip-table tbody tr:nth-child(odd) {
-	background-color: hsl(0, 0%, 93%, 1);
+  background-color: hsl(0, 0%, 93%, 1);
 }
 
 .trip-table th {
@@ -589,66 +681,18 @@ section.call-to-action .contact-button:hover {
 }
 
 .table-container {
-  width: 100%;
+  width: 97%;
   overflow-x: auto;
   margin-bottom: 1.5rem;
+  margin: 1rem;
 }
 
 .trip-table th,
 .trip-table td {
-  min-width: 120px; /* ensures readability */
+  min-width: 120px;
+  /* ensures readability */
   white-space: nowrap;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* .trip-table {
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch; 
-}  */
-
-/* .trip-table-heading {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.75rem;
-  color: var(--Additional-Color1);
-  margin-bottom: 0.75rem;
-  text-align: center;
-}
-
-.trip-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: var(--Body-Font);
-  margin: 2rem 0;
-  font-size: em;
-}
-
-.trip-table th,
-.trip-table td {
-  border: 1px solid #ccc;
-  /* padding: 0.75rem 1rem; */
-  /* text-align: left; */
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Footer */
@@ -663,6 +707,7 @@ section.call-to-action .contact-button:hover {
   color: #fff;
   font-family: var(--Body-Font);
   gap: 1rem;
+
 }
 
 .footer-logo img {

@@ -1,4 +1,4 @@
-@media (min-width: 40.5em) {
+@media (min-width: 37.5em) {
   #logo-img {
     min-width: 140px;
   }
@@ -19,10 +19,11 @@
   .navigation a {
     display: block;
     flex: 1 1 100%;
-
-    font-size: 1.5rem;
     max-width: 250px;
+    font-size: 1.1rem;
   }
+
+
 
   .logo {
     display: flex;
@@ -47,6 +48,10 @@
     margin: 0.5rem 0;
   }
 
+  .carousel-item img {
+    height: 600px;
+  }
+
   .subscribe-section h2 {
     font-size: 2.3rem;
   }
@@ -69,20 +74,63 @@
   }
 
   .trip-text a {
-    font-size: 1.4rem;
-    width: 30%;
+    font-size: 1.2rem;
+    width: 300px;
   }
 
   .trip-section {
     margin-bottom: 2.5rem;
   }
 
-  .offerings h2 {
-    font-size: 2.3rem;
-    margin-bottom: 2.5rem;
+  .lh-1 {
+    font-size: 1.6rem;
   }
 
-  .grid-item p {
+  .lead {
+    font-size: 1.4rem;
+  }
+
+  .mx-auto {
+    padding-top: 0;
+  }
+
+  .col-md-7 h2 {
+    font-size: 1.4rem;
+  }
+
+  .offering-h2 {
+    font-size: 2rem;
+  }
+
+  .col-md-5 {
+    margin-top: 1rem;
+  }
+
+  .proof-header h2 {
+    font-size: 2.3rem;
+
+  }
+
+  .proof-header p {
+    font-size: 1.3rem;
+
+  }
+
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .name {
+    font-size: 1.5rem;
+
+  }
+
+  .name span {
+    font-size: 1.2rem;
+  }
+
+  blockquote {
     font-size: 1.2rem;
   }
 
@@ -104,8 +152,9 @@
   .footer-copy {
     font-size: 1.2rem;
     padding-top: 2rem;
-    /* border-top: none; */
   }
+
+
 
   /* About Page */
 
@@ -134,20 +183,11 @@
 
   }
 
-  /* adventure-figure {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 
-  .adventure-figure figure {
-    flex: 1 1 45%;
-    max-width: 45%;
-  }
-} */
 
 
   /* Contact Page */
+
   .contact-h1 {
     font-size: 2.3rem;
   }
@@ -193,19 +233,32 @@
 
   /* Trip Page */
 
-   .trip-item img {
+ .trip-description {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+ }
+  .trip-item img {
     height: 300px;
   }
 
-  /* .trip-table th:first-child,
-  .trip-table td:first-child {
-    min-width: 200px; */
+  section.call-to-action h1 {
+    font-size: 1.8rem;
+  }
+
+  .trip-item h3 {
+    font-size: 1.5rem;
+  }
+
+  .trip-item p {
+    font-size: 1.3rem;
+  }
+
 
 
 }
 
-@media (max-width: 800px) {
+@media (min-width: 800px) {
   .navigation a {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }

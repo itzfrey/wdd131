@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles/rafting.css">
   <link rel="stylesheet" href="styles/rafting-large.css">
+  <link rel="stylesheet" href="styles/rafting-larger.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
   <script src="scripts/rafting.js" defer></script>
 </head>
@@ -61,7 +63,7 @@
       </div>
     </section>
     <section class="subscribe-section">
-      <h2>Dont Miss an Adventure</h2>
+      <h2>Don't Miss an Adventure</h2>
       <form id="subscribe-form">
         <input type="text" id="name" placeholder="Your Name" required>
         <input type="email" id="email" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
@@ -81,28 +83,65 @@
         <a href="trips.html" class="trip-button">View All Adventures</a>
       </div>
     </div>
-
-    <section class="offerings">
-      <h2>Our Rafting Site Purpose and Offerings</h2>
-      <div class="grid">
-        <div class="grid-item">
-          <img src="images/thrilling-image.webp" alt="Thrilling Rapids" loading="lazy">
-          <h3>Thrilling Rapids Expendition</h3>
-          <p>
-            Experience the excitement of navigating through challenging rapids
-            with our expert guides.
-          </p>
+    <section class="offerings-section">
+      <h2 class="offering-h2">Our Rafting Site Purpose and Offerings</h2>
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Thrilling Rapids Expendition.</h2>
+          <p class="lead">Experience the excitement of navigating through challenging rapids
+            with our expert guides.</p>
         </div>
-        <div class="grid-item">
-          <img src="images/family-fun.webp" alt="Family Fun Float" loading="lazy">
-          <h3>Family Fun Float</h3>
-          <p>
-            Enjoy serene and peaceful float trips, taking in the breathtaking
-            natural beauty around you.
-          </p>
+        <div class="col-md-5">
+          <img src="images/thrilling-rapids.webp" alt="Thirilling rapids image" width="500" height="500"
+            class="featurette-image img-fluid mx-auto" loading="lazy">
+        </div>
+      </div>
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Family Fun Float</h2>
+          <p class="lead">Enjoy serene and peaceful float trips, taking in the breathtaking
+            natural beauty around you.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="images/family-fun.webp" alt="Family fun image" width="500" height="500"
+            class="featurette-image img-fluid mx-auto" loading="lazy">
         </div>
       </div>
     </section>
+
+    <section class="social-proof">
+      <div class="proof-header">
+        <h2>10,000+ Adventurers Trust Frey Rafting</h2>
+        <p>See what our thrill-seekers and families are raving about after their river experiences:</p>
+      </div>
+
+      <div class="testimonials">
+        <div class="testimonial-card">
+          <img src="images/profile.jpg" alt="frey boy" class="avatar">
+          <p class="name">Frey boy <span>Verified Rafter</span></p>
+          <blockquote>
+            “The rapids were epic, and the guides made it super safe and fun. 10/10 experience!”
+          </blockquote>
+        </div>
+
+        <div class="testimonial-card">
+          <img src="images/irene-roberts.jpg" alt="Irene Roberts" class="avatar">
+          <p class="name">Irene Roberts <span>Family Adventurer</span></p>
+          <blockquote>
+            “Perfect for our family! Gentle floats and peaceful scenery — my kids loved it!”
+          </blockquote>
+        </div>
+
+        <div class="testimonial-card">
+          <img src="images/caleb-stones.webp" alt="caleb stones" class="avatar">
+          <p class="name">Anne Wallace <span>Outdoor Enthusiast</span></p>
+          <blockquote>
+            “From beginning to end, the journey was breathtaking. Highly recommended!”
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
