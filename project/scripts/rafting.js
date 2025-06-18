@@ -1,29 +1,36 @@
 
 console.log("rafting.js loaded");
 
-const hamButton = document.querySelector("#menu");
-const navigation = document.querySelector(".navigation");
+// ========== Navigation Toggle ==========
+function toggleMenu() {
+  const hamButton = document.querySelector("#menu");
+  const navigation = document.querySelector(".navigation");
 
-hamButton.addEventListener("click", () => {
-	navigation.classList.toggle("open");
-	hamButton.classList.toggle("open");
-});
+  hamButton.addEventListener("click", () => {
+    navigation.classList.toggle("open");
+    hamButton.classList.toggle("open");
+  });
+}
 
-// footer year and last modified date
-const year = document.querySelector("#currentyear");
-const date = new Date();
-const lastModified = document.querySelector("#lastModified");
+// ========== Footer Date Update ==========
+function updateFooterDates() {
+  const year = document.querySelector("#currentyear");
+  const lastModified = document.querySelector("#lastModified");
+  const date = new Date();
 
-year.innerHTML = date.getFullYear();
-lastModified.innerHTML = "Last Modified: " + document.lastModified
+  year.innerHTML = date.getFullYear();
+  lastModified.innerHTML = `Last Modified: ${document.lastModified}`;
+}
 
-// localStorage counter script
-    window.addEventListener("DOMContentLoaded", () => {
-      let reviewCount = localStorage.getItem("reviewCount");
-      reviewCount = reviewCount ? parseInt(reviewCount) + 1 : 1;
-      localStorage.setItem("reviewCount", reviewCount);
-    });
+// ========== Track Visits Using localStorage ==========
+function updateVisitCounter() {
+  let reviewCount = localStorage.getItem("reviewCount");
+  reviewCount = reviewCount ? parseInt(reviewCount) + 1 : 1;
+  localStorage.setItem("reviewCount", reviewCount);
+  console.log(`This page has been visited ${reviewCount} times.`);
+}
 
+// ========== Trip Data (Array of Objects) ==========
 const trips = [
   { name: "Extreme Trips", duration: "2 days", difficulty: "Challenging", season: "Spring, Summer", price: "$5,000" },
   { name: "Family Fun Float", duration: "Half day", difficulty: "Easy", season: "Spring, Summer, Fall", price: "$1,500" },
@@ -32,6 +39,7 @@ const trips = [
   { name: "Gentle Float Trips", duration: "1 day", difficulty: "Moderate", season: "Spring, Summer, Fall", price: "$1,500" }
 ];
 
+// ==========  Build Trips Table ==========
 function buildTripTable() {
   const container = document.getElementById("tripTableContainer");
   if (!container) {
@@ -39,7 +47,11 @@ function buildTripTable() {
     return;
   }
 
-  // Add heading above table
+  if (trips.length === 0) {
+    container.innerHTML = "<p>No trips available right now.</p>";
+    return;
+  }
+
   let heading = container.querySelector(".trip-table-heading");
   if (!heading) {
     heading = document.createElement("h2");
@@ -51,7 +63,7 @@ function buildTripTable() {
   const table = document.createElement("table");
   table.classList.add("trip-table");
 
-  // Build header
+  // Table Header
   const thead = table.createTHead();
   const headerRow = thead.insertRow();
   ["Trip Name", "Duration", "Difficulty", "Season", "Price"].forEach(text => {
@@ -60,7 +72,7 @@ function buildTripTable() {
     headerRow.appendChild(th);
   });
 
-  // Build body
+  // Table Body
   const tbody = document.createElement("tbody");
   trips.forEach(trip => {
     const tr = tbody.insertRow();
@@ -71,11 +83,16 @@ function buildTripTable() {
   });
   table.appendChild(tbody);
 
-  // Remove existing table (if re-rendering)
   const existing = container.querySelector("table.trip-table");
   if (existing) existing.remove();
 
   container.appendChild(table);
 }
 
-document.addEventListener("DOMContentLoaded", buildTripTable);
+// ========== Initialize Everything on Page Load ==========
+document.addEventListener("DOMContentLoaded", () => {
+  toggleMenu();
+  updateFooterDates();
+  updateVisitCounter();
+  buildTripTable();
+});
