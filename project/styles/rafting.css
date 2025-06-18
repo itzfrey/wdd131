@@ -45,6 +45,7 @@ main {
   max-width: 1500px;
   margin: 0 auto;
   /*background-image: url('../images/background-trips.webp');*/
+  background-color: #f3e8ee;
 }
 
 header {
