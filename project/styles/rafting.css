@@ -44,7 +44,8 @@ button {
 main {
   max-width: 1500px;
   margin: 0 auto;
-  background-image: url('../images/background-trips.webp');
+  /*background-image: url('../images/background-trips.webp');*/
+  background-color: #f3e8ee;
 }
 
 header {
@@ -456,7 +457,7 @@ figure {
 
 .contact-h1 {
   padding: 1.5rem;
-  color: #fff;
+  color: #000;
   text-align: center;
   font-weight: bold;
 
